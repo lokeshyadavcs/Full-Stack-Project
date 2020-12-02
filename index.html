@@ -8,28 +8,53 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {margin: 0;}
+    
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    ul.topnav li {float: left;}
+    
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.topnav li a:hover:not(.active) {background-color: rgb(9, 13, 248);}
+    
+    ul.topnav li a.active {background-color: #063ef8;}
+    
+    ul.topnav li.right {float: right;}
+    
+    @media screen and (max-width: 600px) {
+      ul.topnav li.right, 
+      ul.topnav li {float: none;}
+    }
+    </style>
 </head>
 <body>
 
 
 
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="pages/Yoga.html">Yoga</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="pages/Contact_us.html">Contact us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link " href="pages/login.html">login</a>
-    </li>
+  <ul class="topnav">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">Yoga</a></li>
+    <li class="right"><a href="#about">login</a></li>
+    <li class="right"><a href="#about">Contact us</a></li>
+    
+    <li class="right"><a href="#about">About</a></li>
+    
   </ul>
-</nav>
 
 
 
